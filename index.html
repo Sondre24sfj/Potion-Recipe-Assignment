@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potion Recipe Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Potion Recipe Game</h1>
+        <p id="recipe-description">Create a healing potion! You need: 2 Herbs, 1 Berry, and 1 Mushroom.</p>
+
+        <div id="ingredient-buttons">
+            <button onclick="addIngredient('herbs')">Add Herbs</button>
+            <button onclick="addIngredient('berries')">Add Berries</button>
+            <button onclick="addIngredient('mushrooms')">Add Mushrooms</button>
+            <button onclick="addIngredient('water')">Add Water</button>
+            <button onclick="addIngredient('flowers')">Add Flowers</button>
+        </div>
+
+        <button onclick="checkPotion()">Brew Potion</button>
+
+        <div id="cauldron">
+            <p>Cauldron contents:</p>
+            <div id="cauldronContents"></div>
+        </div>
+
+        <p id="potionResult"></p>
+        <p>Successful Potions Brewed: <span id="successfulBrews">0</span></p>
+
+        <div id="recipeSwitcher">
+            <button onclick="switchRecipe('healing')">Switch to Healing Potion</button>
+            <button onclick="switchRecipe('strength')">Switch to Strength Potion</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ingredient-buttons button, #recipeSwitcher button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#ingredient-buttons button:hover, #recipeSwitcher button:hover {
+    background-color: #45a049;
+}
+
+#cauldron {
+    margin-top: 20px;
+    padding: 3px;
+    background-color: #35a6313f;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+#cauldronContents {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#potionResult {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#successfulBrews {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
